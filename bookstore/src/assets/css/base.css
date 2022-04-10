@@ -1,0 +1,49 @@
+@import "./normalize.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+
+/* 字体声明 */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?834aw3');
+  src:  url('fonts/icomoon.eot?834aw3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?834aw3') format('truetype'),
+    url('fonts/icomoon.woff?834aw3') format('woff'),
+    url('fonts/icomoon.svg?834aw3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
